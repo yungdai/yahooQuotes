@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Stock.h"
 
 @interface AppDelegate ()
 
