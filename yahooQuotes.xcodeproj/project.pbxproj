@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A4E06F01AEFCFFD00B657C1 /* Stock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E06EF1AEFCFFD00B657C1 /* Stock.m */; };
 		1A4F9B4B1AEE7DE90094C56C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F9B4A1AEE7DE90094C56C /* main.m */; };
 		1A4F9B4E1AEE7DE90094C56C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F9B4D1AEE7DE90094C56C /* AppDelegate.m */; };
 		1A4F9B511AEE7DEA0094C56C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4F9B501AEE7DEA0094C56C /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A4E06EE1AEFCFFD00B657C1 /* Stock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stock.h; sourceTree = "<group>"; };
+		1A4E06EF1AEFCFFD00B657C1 /* Stock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stock.m; sourceTree = "<group>"; };
 		1A4F9B451AEE7DE90094C56C /* yahooQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yahooQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4F9B491AEE7DE90094C56C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A4F9B4A1AEE7DE90094C56C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 		1A4F9B6E1AEE7DF30094C56C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1A4E06EE1AEFCFFD00B657C1 /* Stock.h */,
+				1A4E06EF1AEFCFFD00B657C1 /* Stock.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 			files = (
 				1A4F9B511AEE7DEA0094C56C /* ViewController.m in Sources */,
 				1A4F9B4E1AEE7DE90094C56C /* AppDelegate.m in Sources */,
+				1A4E06F01AEFCFFD00B657C1 /* Stock.m in Sources */,
 				1A4F9B4B1AEE7DE90094C56C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +440,7 @@
 				1A4F9B6A1AEE7DEA0094C56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A4F9B6B1AEE7DEA0094C56C /* Build configuration list for PBXNativeTarget "yahooQuotesTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +449,7 @@
 				1A4F9B6D1AEE7DEA0094C56C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
