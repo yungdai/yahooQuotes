@@ -63,6 +63,8 @@
 		1A4F9B3C1AEE7DE90094C56C = {
 			isa = PBXGroup;
 			children = (
+				1A4F9B6F1AEE7DF70094C56C /* Controller */,
+				1A4F9B6E1AEE7DF30094C56C /* Models */,
 				1A4F9B471AEE7DE90094C56C /* yahooQuotes */,
 				1A4F9B611AEE7DEA0094C56C /* yahooQuotesTests */,
 				1A4F9B461AEE7DE90094C56C /* Products */,
@@ -117,6 +119,20 @@
 				1A4F9B631AEE7DEA0094C56C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A4F9B6E1AEE7DF30094C56C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1A4F9B6F1AEE7DF70094C56C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
