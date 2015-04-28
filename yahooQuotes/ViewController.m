@@ -29,6 +29,7 @@
     self.myLabel = [[UILabel alloc]initWithFrame:CGRectMake(20, 100, 280, 40)];
     self.myLabel.text = @"$0.0";
     [self.view addSubview:_myLabel];
+
     
     // create the button
     UIButton *myButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
@@ -43,8 +44,12 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self.textField resignFirstResponder];
+    // because we're instantiated the getQuote method in the header file we can now call it in this method.
+    [self getQuote];
     return NO;
 }
+
+
 
 - (void)getQuote {
     
@@ -76,6 +81,19 @@
     
     // create a data structure for the values you recieves from the Yahoo API and have them put into an array but parse the data and tell that it's separated by a comma.  We are putting all the CSV data into an array separated by a comma.
     NSArray *arrayData = [contentString componentsSeparatedByString:@","];
+    
+    // create a float value and assign index 1 for the current stock price and index 5 of the opening price for the stock from the arrayData
+    float current =[[arrayData objectAtIndex:1]floatValue];
+    float open = [[arrayData objectAtIndex:5]floatValue];
+    
+    // if the current value of the stock is greater than or equal to the opening value
+    if (current >= open) {
+        _myLabel.textColor = [UIColor greenColor];
+        _myLabel.text = [arrayData objectAtIndex:1];
+    } else {
+        _myLabel.textColor = [UIColor redColor];
+        _myLabel.text = [arrayData objectAtIndex:5];
+    }
     
     // displaying the data from the array
      _myLabel.text = [arrayData objectAtIndex:1];

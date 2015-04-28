@@ -14,5 +14,8 @@
 // UILabel
 @property (strong, nonatomic) UILabel *myLabel;
 
+// quote method instantiated
+- (void)getQuote;
+
 @end
 
