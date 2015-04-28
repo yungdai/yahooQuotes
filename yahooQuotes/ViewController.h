@@ -1,6 +1,7 @@
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+// added the UITextFieldDelegate
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
 
 // this app will require the three following things

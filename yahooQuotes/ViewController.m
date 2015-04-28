@@ -8,6 +8,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
     // create the textField
     self.textField = [[UITextField alloc]initWithFrame:CGRectMake(20, 60, 280, 20)];
@@ -17,6 +18,10 @@
     // disable autocorrection and the return key
     self.textField.autocapitalizationType = UITextAutocorrectionTypeNo;
     self.textField.returnKeyType = UIReturnKeyDone;
+    
+    // adding in the UITextFieldDelegate to self, made sure the text field is created before we run the delegate.
+    self.textField.delegate = self;
+    
     [self.view addSubview:_textField];
 
     
@@ -31,8 +36,14 @@
     [myButton setTitle:@"Get Quote" forState:UIControlStateNormal];
     [myButton addTarget:self action:@selector(getQuote) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:myButton];
-    
-    
+}
+
+
+// called when 'return' key pressed. return NO to ignore.
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self.textField resignFirstResponder];
+    return NO;
 }
 
 - (void)getQuote {
